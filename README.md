@@ -72,6 +72,10 @@ To run mavros node
 
 ```roslaunch mavros apm.launch fcu_url:=/dev/ttyTHS0:921600```
 
+If no permission to UART
+
+```sudo chmod 777 /dev/ttyTHS0```
+
 ## Status
 Project is: _in progress_
 
