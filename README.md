@@ -72,10 +72,17 @@ To run mavros node
 
 ```roslaunch mavros apm.launch fcu_url:=/dev/ttyTHS0:921600```
 
-If no permission to UART
+If no permission to UART on Xavier NX
 
 ```sudo chmod 777 /dev/ttyTHS0```
 
+or if permanetly needed
+
+```
+sudo systemctl disable nvgetty.service
+sudo reboot
+sudo usermod -a -G tty $USER
+```
 ## Status
 Project is: _in progress_
 
