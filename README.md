@@ -82,6 +82,7 @@ or if permanetly needed
 sudo systemctl disable nvgetty.service
 sudo reboot
 sudo usermod -a -G tty $USER
+sudo usermod -a -G dialout $USER
 ```
 ## Status
 Project is: _in progress_
